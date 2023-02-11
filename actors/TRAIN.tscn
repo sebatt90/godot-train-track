@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://model/train.dae" type="PackedScene" id=1]
+[ext_resource path="res://scripts/track.gd" type="Script" id=2]
+[ext_resource path="res://actors/WAGON.tscn" type="PackedScene" id=3]
+
+[node name="TRAIN" type="PathFollow"]
+rotation_mode = 4
+script = ExtResource( 2 )
+wagonModel = ExtResource( 3 )
+
+[node name="train" parent="." instance=ExtResource( 1 )]
+transform = Transform( -0.2, 0, -1.74846e-08, 0, 0.2, 0, 1.74846e-08, 0, -0.2, 0, 0, 0 )
